@@ -1,0 +1,447 @@
+/* SKRIP IKI GAENANE @_xxevnxxe_ */
+
+/* NGOWAYI TANPO IJIN / NGGAE TANPO IJIN PKI :v */
+
+/* SCREEN RES */
+
+/* FONT IMPORT */
+
+@font-face {
+    font-family: mainBlack;
+    src: url('../font/black.ttf');
+}
+
+@font-face {
+    font-family: mainBold;
+    src: url('../font/bold.ttf');
+}
+
+@font-face {
+    font-family: mainBoldItalic;
+    src: url('../font/bolditalic.ttf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../font/regular.ttf');
+}
+
+
+/* UNIVERSAL ALL WIDTH */
+/* ** */
+/* * */
+/*  */
+
+
+/*  */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'regular';
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    color: rgb(211, 4, 4);
+}
+
+h1,h2,h3{
+    color: white;
+    font-family: 'mainBlack';
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(105, 105, 105);
+}
+::-webkit-scrollbar-thumb{
+    /* background-color: rgb(190, 189, 189); */
+    background-color: rgb(116, 2, 2);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(180, 20, 20);
+}
+
+
+/* NAVBAR */
+.navbar{
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.navbar li{
+    list-style-type: none;
+    float: left;
+}
+.navbar li .link{
+    display: block;
+    padding: 20px;
+}
+.navbar li .link:hover{
+    background-color: rgb(34, 34, 34);
+}
+.navbar li.right{
+    float: right;
+}
+.navbar .button{
+    padding: 15px;
+}
+.navbar .button:hover .button-top,.navbar .button:hover .button-bottom{
+    width: 20px;
+    border-radius: 0 0 0 0;
+}
+.navbar .button:hover .button-mid{
+    width: 40px;
+    border-radius: 0 20px 20px 0;
+}
+.button-top{
+    border-radius: 0 0 10px 0;
+    transition: 0.2s;
+    margin: 0 0 5px 0;
+    height: 5px;
+    width: 40px;
+    background-color: white;
+}
+.button-mid{
+    transition: 0.2s;
+    margin: 0 0 5px 0;
+    height: 5px;
+    width: 20px;
+    background-color: white;
+}
+.button-bottom{
+    transition: 0.2s;
+    border-radius: 0 10px 0 0;
+    margin: 0 0 0 0;
+    height: 5px;
+    width: 40px;
+    background-color: white;
+}
+.button a{
+    margin: 0;
+    padding: 0;
+}
+li.center img{
+    position: absolute;
+    float: none;
+    top: 50%;
+    left: 50%;
+    /* margin: 0 40px 0 40px; */
+    transform: translate(-50%, -50%);
+    height: 40px;
+}
+
+/* LARGE THUMBNAIL */
+.thumbnail-large{
+    height: 30vw;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+/* EVENT HIGHLIGHTED */
+.event-highlighted{
+    position: absolute;
+    display: block;
+    width: 60vw;
+    height: 30vw;
+    background-size: cover;
+    background-position: top;
+    transition: 0.25s;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.3);
+}
+.event-highlighted:hover{
+    transform: scale(0.99); 
+}
+.event-highlighted .link{
+    width: 100%;
+    height: 100%;
+}
+
+/* PADDING UNIVERSAL */
+.padding{
+    padding: 15px;
+}
+
+.margin-x-small{
+    margin: 10px 0 10px 0;
+}
+
+.margin-x-medium{
+    margin: 20px 0 20px 0;
+}
+
+.margin-x-large{
+    margin: 40px 0 40px 0;
+}
+
+.margin-x-xlarge{
+    margin: 60px 0 60px 0;
+}
+
+/* EVENT OVERFLOW */
+.event-list{
+    margin-top: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0));
+    grid-template-rows: auto;
+    /* 270 */
+}
+
+/* EVENT */
+.event{
+    /* margin-right: 20px; */
+    display: block;
+    width: 300px;
+    transition: 0.15s;
+    /* 250 */
+}
+.event:hover{
+    opacity: .6;
+    transform: scale(0.98);
+}
+.event h4{
+    color: white;
+    transition: 0.3s;
+}
+.event:hover h4{
+    color: rgb(180, 20, 20);
+}
+.event .img{
+    border-radius: 5px 5px 0 0;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    padding-top: 20px;
+    height: 350px;
+    /* 280 */
+}
+.detail{
+    background-color: rgb(34, 34, 34);
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 20px;
+}
+.img date{
+    /* position: absolute; */
+    color: white;
+    margin: 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4);
+}
+.img status{
+    color: white;
+    text-align: right;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    margin: -10px 0 0px 60px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4);
+}
+
+/* BUTTON GREEN */
+.button-green {
+    margin-top: 20px;
+}
+.button-green a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'mainBold';
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(6, 155, 18);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.button-green a span {
+    position: relative;
+    z-index: 2;
+}
+.button-green a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(6, 155, 18);
+    transition: all .35s;
+}
+.button-green a:hover {
+    color: rgb(6, 155, 18);
+}
+.button-green a:hover:after {
+    width: 0;
+}
+
+/* POSTER */
+.poster{
+    margin: 15px 0 0 0;    
+    height: 250px;
+    /* border-radius: 5px; */
+    /* box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4); */
+}
+.poster-left,.poster-right{
+    color: white;
+}
+.poster-left p, .poster-right p{
+    margin-top: 20px;
+}
+.poster-left{
+    float: left;
+    width: 250px;
+    padding: 30px;
+}
+.poster-right{
+    float: right;
+    width: 250px;
+    padding: 30px;
+}
+.poster-right-image{
+    float: right;
+    height: 250px;
+    width: 50vw;
+    background-size: cover;
+    background-position: left center;
+}
+.poster-left-image{
+    float: left;
+    height: 250px;
+    width: 50vw;
+    background-size: cover;
+    background-position: right center;
+}
+
+/* ADVANCE OPTION */
+.advance-list{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.advance{
+    height: 150px;
+    border-radius: 5px;
+    background-size: cover;
+    /* padding: 40px; */
+    transition: 0.2s;
+}
+
+.advance h3{
+    background-image: linear-gradient(90deg, rgba(0,0,0,1), rgba(145, 84, 84, .0));
+    transition: 0.2s;
+    height: 70px;
+    padding: 40px;
+}
+
+
+
+/* END OF UNIVERSAL ALL WIDTH */
+@media only screen and (max-width: 1000px){
+}
+
+@media only screen and (max-width: 700px){
+
+    /* NAVBAR */
+    li.center img{
+        height: 20px;
+    }
+    .navbar li .link{
+        padding: 15px;
+    }
+    .navbar .button{
+        padding: 10px;
+    }
+
+    /* POSTER */
+    .poster{
+        /* margin-bottom: 15vh; */
+        height: 100%;
+    }
+    .poster-left, .poster-right{
+        margin: 0 auto 0 auto;
+        text-align: center;
+        width: 75vw;
+        float: none;
+    }
+    .poster-right-image{
+        background-position: top center;
+        height: 300px;
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .poster-left-image{
+        background-position: top center;
+        height: 300px;
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    /* EVENT HIGHLIGHTED */
+    .event-highlighted{
+        width: 95%;
+        height: 47vw;
+    }
+
+    /* THUMBNAIL LARGE */
+    .thumbnail-large{
+        padding: 10px;
+        height: 90vw;
+    }
+
+    /* EVENT */
+    .event-list{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 0));
+    }
+    .event{
+        width: 250px;
+    }
+    .event img{
+        height: 280px;
+    }
+    .event .img status{
+        margin-left: 10px;
+    }
+    .event:hover{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .advance h3{
+        color: transparent;
+    }
+    .advance:hover h3{
+        /* background-image: linear-gradient(90deg, rgba(0, 0, 0,1), rgba(0,0,0,.5)); */
+        background-color: rgba(0,0,0,.7);
+        color: white;
+    }
+    .advance:hover{
+        transform: scale(0.99);
+    }
+}
