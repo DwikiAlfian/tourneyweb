@@ -10,11 +10,38 @@
 </head>
 
 <body style="background-color: black;">
+    <!-- SIDEBAR -->
+    <div id="sideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">If you saw this,</a>
+        <a href="">It's mean you were able to see.</a>
+        <a href="">And if you can read this,</a>
+        <a href="">It's mean you were able to read.</a>
+        <a href="">If you understand about this text,</a>
+        <a href="">Then it's mean you were able to think,</a>
+        <a href="">And you are still alive,</a>
+        <a href="">Still breathing,</a>
+        <a href="">Stop judging other's people life,</a>
+        <a href="">And start enjoying you own gratefull life.</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">...</a>
+        <a href="">JK... F#CK YOU BITCH!!!! </a>
+        <a href="">...</a>
+        <a href="">...</a>
+    </div>
     <!-- NAVBAR -->
     <div class="navbar">
         <!-- SIDE BAR BUTTON -->
-        <li class="button">
-            <a href="">
+        <li class="button" onclick="openNav()">
+            <a href="javascript:void(0)">
                 <div class="button-top"></div>
                 <div class="button-mid"></div>
                 <div class="button-bottom"></div>
@@ -47,7 +74,9 @@
 
     <!-- EVENT LIST -->
     <div class="padding">
-        <h1>Baru-baru ini ditambahkan</h1>
+        <div class="header-center small-space">
+            <h1>.:: Editor's Choice ::.</h1>
+        </div>
 
         <!-- LIST OVERFLOW EVENT MAX 6 -->
         <div class="event-list">
@@ -56,13 +85,18 @@
                 <div class="event">
                     <div class="img" style="background-image: 
                         linear-gradient(180deg,rgba(0,0,0,.8),rgba(255,255,255,.0)), 
-                        url('images/overwatch.jpg');"> <!-- LINK FOR POSTER -->
+                        url('images/overwatch.jpg');">
+                        <!-- LINK FOR POSTER -->
+                        <status class="ready">TERSEDIA</status>
                         <date>2 Hari lagi</date> <!-- HARI TERSISA -->
-                        <status class="ready">TERSEDIA</status> <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
+                        
+                        <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
                         <prizepool>= Rp. 1.000.000,00 =</prizepool> <!-- PRIZEPOOL  // JIKA ADA -->
                     </div>
-                    <div class="detail tourney"> <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
-                        <h4>Event Tourney Overwatch</h4> <!-- JUDUL EVENT -->
+                    <div class="detail tourney">
+                        <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
+                        <h3>Event Tourney Overwatch</h3> <!-- JUDUL EVENT -->
+                        <p>BOOM.ID</p> <!-- PENYELENGGARA -->
                         <price>Rp. 15.000,00</price> <!-- HARGA PENDAFTARAN // JIKA ADA -->
                     </div>
                 </div>
@@ -72,13 +106,18 @@
                 <div class="event">
                     <div class="img" style="background-image: 
                         linear-gradient(180deg,rgba(0,0,0,.8),rgba(255,255,255,.0)), 
-                        url('images/pubgmobile.jpg');"> <!-- LINK FOR POSTER -->
+                        url('images/pubgmobile.jpg');">
+                        <!-- LINK FOR POSTER -->
+                        <status class="ready">TERSEDIA</status>
                         <date>21 Hari lagi</date> <!-- HARI TERSISA -->
-                        <status class="ready">TERSEDIA</status> <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
+                        
+                        <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
                         <prizepool>= Rp. 3.000.000,00 =</prizepool> <!-- PRIZEPOOL  // JIKA ADA -->
                     </div>
-                    <div class="detail tourney"> <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
-                        <h4>PUBG Mobile #GayForLife Event</h4> <!-- JUDUL EVENT -->
+                    <div class="detail tourney">
+                        <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
+                        <h3>PUBG Mobile #GayForLife Event</h3> <!-- JUDUL EVENT -->
+                        <p>NTZR</p>
                         <price>Rp. 100.000,00</price> <!-- HARGA PENDAFTARAN // JIKA ADA -->
                     </div>
                 </div>
@@ -88,14 +127,19 @@
                 <div class="event">
                     <div class="img" style="background-image: 
                         linear-gradient(180deg,rgba(0,0,0,.8),rgba(255,255,255,.0)), 
-                        url('images/valorant.jpg');"> <!-- LINK FOR POSTER -->
+                        url('images/valorant.jpg');">
+                        <!-- LINK FOR POSTER -->
+                        <status class="kosong">SLOT HABIS</status>
                         <date>1 Hari lagi</date> <!-- HARI TERSISA -->
-                        <status class="kosong">SLOT HABIS</status> <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
+
+                        <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
                         <!-- <prizepool>= Rp. 1.000.000,00 =</prizepool>  -->
                         <!-- PRIZEPOOL  // JIKA ADA -->
                     </div>
-                    <div class="detail scrim"> <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
-                        <h4>Scrim Valorant Santuy</h4> <!-- JUDUL EVENT -->
+                    <div class="detail scrim">
+                        <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
+                        <h3>Scrim Valorant Santuy</h3> <!-- JUDUL EVENT -->
+                        <p>Sora Aoi</p>
                         <price>GRATIS</price>
                         <!-- HARGA PENDAFTARAN // JIKA ADA -->
                     </div>
@@ -106,13 +150,18 @@
                 <div class="event">
                     <div class="img" style="background-image: 
                         linear-gradient(180deg,rgba(0,0,0,.8),rgba(255,255,255,.0)), 
-                        url('images/tekken.jpg');"> <!-- LINK FOR POSTER -->
+                        url('images/tekken.jpg');">
+                        <!-- LINK FOR POSTER -->
+                        <status class="ready">TERSEDIA</status>
                         <date>4 Hari lagi</date> <!-- HARI TERSISA -->
-                        <status class="ready">TERSEDIA</status> <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
+                        
+                        <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
                         <prizepool>= Rp. 32.000.000,00 =</prizepool> <!-- PRIZEPOOL  // JIKA ADA -->
                     </div>
-                    <div class="detail tourney"> <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
-                        <h4>Tekken Province Tournament</h4> <!-- JUDUL EVENT -->
+                    <div class="detail tourney">
+                        <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
+                        <h3>Tekken Province Tournament</h3> <!-- JUDUL EVENT -->
+                        <p>Faggot</p>
                         <price>Rp. 200.000,00</price> <!-- HARGA PENDAFTARAN // JIKA ADA -->
                     </div>
                 </div>
@@ -122,14 +171,18 @@
                 <div class="event">
                     <div class="img" style="background-image: 
                         linear-gradient(180deg,rgba(0,0,0,.8),rgba(255,255,255,.0)), 
-                        url('images/freefire.jpg');"> <!-- LINK FOR POSTER -->
-
+                        url('images/freefire.jpg');">
+                        <!-- LINK FOR POSTER -->
+                        <status class="ready">MASIH ADA</status>
                         <date>360 Hari lagi</date> <!-- HARI TERSISA -->
-                        <status class="ready">MASIH ADA</status> <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
+                        
+                        <!-- STATUS KETERSEDIAAN // JIKA KOSONG ==> class="kosong"-->
                         <prizepool>= Rp. 10.000,00 =</prizepool> <!-- PRIZEPOOL  // JIKA ADA -->
                     </div>
-                    <div class="detail tourney"> <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
-                        <h4>Free Fire 8-Bit</h4> <!-- JUDUL EVENT -->
+                    <div class="detail tourney">
+                        <!-- JIKA SCRIM MAKA ==> class="detail scrim" -->
+                        <h3>Free Fire 8-Bit</h3> <!-- JUDUL EVENT -->
+                        <p>Bapak Presiden Kita</p>
                         <price>Rp. 999.999.999,00</price> <!-- HARGA PENDAFTARAN // JIKA ADA -->
                     </div>
                 </div>
@@ -137,10 +190,28 @@
 
         </div>
 
+        <!-- POSTER TEXT LEFT -->
+        <div class="poster"
+            style="background-image: linear-gradient(45deg, rgb(0,132,255),rgb(0, 86, 167),rgba(0,132,255,.7),rgba(0,132,255,.4),rgba(255,255,255));">
+            <div class="poster-left">
+                <h2>Jelajahi Event Lainnya</h2>
+                <p>Ada beragam Event yang disediakan, klik tombol dibawah ini untuk menelusuri lebih lanjut</p>
+                <div class="button-center">
+                    <div class="button-black">
+                        <a href="">
+                            <span>Event Lainnya</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="poster-right-image" style="background-image: url('images/gamecard_poster.png');"></div>
+        </div>
+
         <!-- ADVANCE OPTION -->
         <div class="padding">
-            <div class="margin-x-xlarge"></div>
-            <h1 class="margin-x-medium" style="text-align: center;">Game Populer</h1>
+            <div class="header-center small-space">
+                <h1 style="text-align: center;">.:: Game Populer ::.</h1>
+            </div>
             <!-- ADVANCE LIST -->
             <div class="advance-list">
                 <!-- ADVANCE -->
@@ -175,7 +246,7 @@
         <!-- POSTER TEXT LEFT -->
         <div class="poster"
             style="background-image: linear-gradient(45deg, rgb(0,0,0),rgba(255,0,0,.3),rgba(255,0,0,.7),rgba(255,0,0,.4),rgba(0,0,0));">
-            <div class="poster-left">
+            <div class="poster-right">
                 <h2>Pilihan game yang beragam</h2>
                 <p>Berbagai macam pilihan game yang tersedia, pilih favoritmu!</p>
                 <div class="button-center">
@@ -186,17 +257,30 @@
                     </div>
                 </div>
             </div>
-            <div class="poster-right-image" style="background-image: url('images/game_poster.png');"></div>
+            <div class="poster-left-image" style="background-image: url('images/game_poster.png');"></div>
         </div>
+    </div>
 
-        <!-- POSTER TEXT RIGHT -->
-        <!-- <div class="poster" style="background-color: white;">
-            <div class="poster-right" style="color: black;">
-                <h2 style="color: black;">Pembayaran mudah dengan beragam pilihan</h2>
-                <p>Cari tau lebih lanjut</p>
+    <div class="footer">
+        <div class="footer-grid">
+            <div class="white">
+                <a href=""><p>Home</p></a>
+                <a href=""><p>Event List</p></a>
+                <a href=""><p>Tambah Event</p></a>
             </div>
-            <div class="poster-left-image" style="background-image: url('images/aov.jpg');"></div>
-        </div> -->
+            <div class="white">
+                <a href=""><p>Kebijakan Privasi</p></a>
+                <a href=""><p>Syarat dan Ketentuan</p></a>
+                <a href=""><p>Bantuan</p></a>
+            </div>
+            <div class="white">
+                <a href=""><p>Masuk</p></a>
+                <a href=""><p>Daftar</p></a>
+            </div>
+        </div>
+        <!-- <div> -->
+            <img style="margin-left: auto; margin-right: auto; display: block; width: 100px;" src="images/logo.png" alt="">
+        <!-- </div> -->
     </div>
 
 
