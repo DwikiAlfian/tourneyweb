@@ -212,7 +212,18 @@ li.center img{
     height: 30vw;
     background-size: cover;
     background-position: top right;
-    padding: 15px;
+    padding: 150px 0 0 100px;
+}
+.thumbnail-detail{
+    width: 500px;
+    color: white;
+}
+.thumbnail-detail h1{
+    font-size: 50px;
+}
+.thumbnail-detail p{
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 /* EVENT HIGHLIGHTED */
@@ -320,7 +331,7 @@ li.center img{
     margin: -35px 0px 10px 10px;
     background-color: black;
     padding: 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4);
 }
 .img status{
@@ -328,7 +339,7 @@ li.center img{
     color: white;
     text-align: center;
     background-color: indigo;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 10px 10px 10px 10px;
     margin: -8px 0px 0px 170px;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4);
@@ -343,7 +354,7 @@ li.center img{
     color: white;
     background-color: rgb(13, 179, 7);
     padding: 7px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .img prizepool{
     text-align: center;
@@ -354,7 +365,7 @@ li.center img{
     background-color: rgb(243, 210, 21);
     padding: 7px;
     margin: 280px 10px 0 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 /* HEADER CENTER */
@@ -525,6 +536,30 @@ li.center img{
     /* display: block; */
 }
 
+/* EDITOR CHOICE */
+.editor-choice{
+    display: grid;
+    grid-template-columns: 60vw auto;
+    grid-template-rows: 30vw;
+}
+.editor-choice .picture{
+    background-size: cover;
+}
+.editor-choice .description{
+    overflow-y: scroll;
+    padding: 30px;
+    background-image: linear-gradient(45deg, rgb(206, 206, 206),white);
+}
+.editor-choice .description h1{
+    color: black;
+}
+.editor-choice .description p{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+
 
 
 /* END OF UNIVERSAL ALL WIDTH */
@@ -532,6 +567,26 @@ li.center img{
 }
 
 @media only screen and (max-width: 700px){
+    /* THUMBNAIL DETAIL */
+    .thumbnail-detail{
+        margin: 40px 15px 0px 15px;
+        width: auto;
+        text-align: center;
+    }
+    .thumbnail-detail h1{
+        font-size: 30px;
+    }
+    .thumbnail-detail p{
+        font-size: 20px;
+    }
+    /* EDITOR CHOICE */
+    .editor-choice{
+        grid-template-columns: auto;
+        grid-template-rows: 50vw auto;
+    }
+    .editor-choice .description{
+        overflow: hidden;
+    }
 
     /* NAVBAR */
     li.center img{
@@ -579,7 +634,7 @@ li.center img{
     /* THUMBNAIL LARGE */
     .thumbnail-large{
         padding: 10px;
-        height: 48vw;
+        height: 90vw;
     }
 
     /* EVENT */
